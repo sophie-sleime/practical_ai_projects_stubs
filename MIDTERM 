@@ -215,7 +215,8 @@ def hangman():
         print("Congratulations, you have won Hangman!")
     else:
         print("Better luck next time, you lost! The word was:", game_state ['word'])
-        play_again = input("Would you like to play Hangman again? (yes/no): ").lower()
+        
+    play_again = input("Would you like to play Hangman again? (yes/no): ").lower()
     if play_again == 'yes':
         hangman()
     else:   
